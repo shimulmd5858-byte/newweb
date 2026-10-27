@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimul's Website</title>
+    
+    <style>
+        /* ==========================================================
+           🎨 Theme Variables (Change colors easily from here)
+        ========================================================== */
+        :root {
+            --primary-color: #4A90E2;    /* Main theme color (Header & Buttons) */
+            --secondary-color: #357ABD;  /* Hover color for buttons */
+            --background-color: #F4F7F6; /* Website background color */
+            --card-color: #FFFFFF;       /* Box background color */
+            --text-color: #333333;       /* Text color */
+        }
+
+        /* Basic Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Style */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content Area */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba-shadow;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        /* Video Container Style */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin-top: 15px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: none;
+        }
+
+        /* Button Style */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Footer Style */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 📌 Header Section -->
+    <header>
+        <h1>Welcome, I am Shimul! 👋</h1>
+        <p>This is my first website created using VS Code</p>
+    </header>
+
+    <!-- 📌 Main Content Section -->
+    <main>
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Hello! I am Shimul. I am learning web design and development. This is a simple, clean, and easily editable website template.</p>
+        </div>
+
+        <div class="card">
+            <h2>My Skills & Goals</h2>
+            <ul>
+                <li>Learning HTML & CSS</li>
+                <li>Practicing with VS Code</li>
+                <li>Building modern web pages</li>
+            </ul>
+            <a href="https://github.com" target="_blank" class="btn">Visit My Profile</a>
+        </div>
+
+        <!-- 📌 YouTube Video Section -->
+        <div class="card">
+            <h2>Watch My Favorite Video</h2>
+            <p>You can embed any YouTube video right here inside your website:</p>
+            
+            <div class="video-container">
+                <!-- YouTube Video Embed -->
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- 📌 Footer Section -->
+    <footer>
+        <p>&copy; 2026 Shimul | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
